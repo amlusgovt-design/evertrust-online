@@ -129,7 +129,8 @@ export default function TransfersPage() {
 
         setShowLoadingModal(false);
         setShowSuccessModal(true);
-      } catch (err) {
+      } catch (error) {
+        console.error("Transfer error:", error);
         setShowLoadingModal(false);
         toast.error("Transfer failed. Please try again.");
       }

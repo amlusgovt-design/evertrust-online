@@ -1,5 +1,6 @@
 "use client";
 
+// @typescript-eslint/no-explicit-any
 import type React from "react";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
@@ -114,9 +115,10 @@ export default function AuthPage() {
         // fallback or handle unexpected role
         router.push("/dashboard/user");
       }
-    } catch (err: any) {
-      setError(err.message || "Login failed");
-      toast.error(err.message || "Login failed");
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : String(err) || "Login failed";
+      setError(msg);
+      toast.error(msg);
     } finally {
       setIsLoading(false);
     }
@@ -165,8 +167,8 @@ export default function AuthPage() {
       setActiveTab("login");
 
       toast.success("Account created successfully!");
-    } catch (err: any) {
-      const msg = err.message || "Signup failed";
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : String(err) || "Signup failed";
       setError(msg);
       toast.error(msg);
     } finally {

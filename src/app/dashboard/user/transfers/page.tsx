@@ -161,7 +161,7 @@ export default function TransfersPage() {
         setShowSuccessModal(true);
       } catch (error) {
         setShowLoadingModal(false);
-        toast.error("Transfer failed. Please try again.");
+        toast.error("Transfer failed. Please try again.", error);
       }
     }, 2500);
   };

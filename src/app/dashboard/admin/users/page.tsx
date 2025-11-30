@@ -113,7 +113,7 @@ export default function UsersPage() {
     const [isLoading, setIsLoading] = useState(false);
 
     const { adminState, getAllBankData } = useAdmin();
-    const { updateUserData, register, sendAccountNumber } = useApp();
+    const { updateUserData, register } = useApp();
 
     useEffect(() => {
         getAllBankData();

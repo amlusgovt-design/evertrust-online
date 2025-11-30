@@ -18,7 +18,6 @@ import {
   query,
   where,
   getDocs,
-  Transaction,
   runTransaction,
   serverTimestamp,
 } from "firebase/firestore";
