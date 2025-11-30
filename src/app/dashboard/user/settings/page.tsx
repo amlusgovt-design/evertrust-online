@@ -95,6 +95,39 @@ export default function SettingsPage() {
     }
   };
 
+    const handleUpdatePin = (event: FormEvent) => {
+      event.preventDefault()
+      const form = event.currentTarget as HTMLFormElement
+      const formData = new FormData(form);
+    const newPin = formData.get("new-pin") as string || '';
+    const confirmPin= formData.get("confirm-pin") as string || '';
+
+    if (newPin !== confirmPin) {
+      toast.error("New passwords do not match");
+    }
+
+    if (user) {
+      toast.promise(
+        updateUserData(user.uid, { pin: newPin }),
+        {
+          loading: "Updating your pin...",
+          success: "Pin updated successfully",
+          error: "Failed to update pin",
+        },
+        {
+          style: {
+            minWidth: "250px",
+            fontSize: "14px",
+          },
+          success: {
+            duration: 4000,
+          },
+          position: "top-right",
+        }
+      )
+    }
+  }
+
   const handleUpdatePassword = (event: FormEvent) => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget as HTMLFormElement);
@@ -102,9 +135,13 @@ export default function SettingsPage() {
     const newPassword = formData.get("new-password") as string;
     const confirmPassword = formData.get("confirm-password") as string;
 
+    if(state.user?.password !== currentPassword) {
+      toast.error("Incorrect Old Password");
+      return
+    }
+
     if (newPassword !== confirmPassword) {
       toast.error("New passwords do not match");
-      console.log(currentPassword);
       return;
     }
 
@@ -129,6 +166,8 @@ export default function SettingsPage() {
       );
     }
   };
+
+
 
   return (
     <div className="grid gap-6 max-w-6xl mx-auto">
@@ -308,6 +347,37 @@ export default function SettingsPage() {
               <CardDescription>Manage your password and security preferences</CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
+              <div className="grid grid-cols-2 gap-x-12">
+
+              <form onSubmit={handleUpdatePin}>
+                <div className="space-y-4">
+                  <h3 className="text-base font-medium flex items-center">
+                    <Lock className="mr-2 h-5 w-5 text-gray-500" />
+                    Pin
+                  </h3>
+                  <div className="space-y-2">
+                    <Label htmlFor="new-password">New Pin</Label>
+                    <Input
+                      id="new-pin"
+                      name="new-pin"
+                      required
+                      className="border-gray-200"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="confirm-password">Confirm New Pin</Label>
+                    <Input
+                      id="confirm-pin"
+                      name="confirm-pin"
+                      required
+                      className="border-gray-200"
+                    />
+                  </div>
+                  <Button type="submit" className="bg-green-500 hover:bg-green-600 text-white">
+                    Update Pin
+                  </Button>
+                </div>
+              </form>
               <form onSubmit={handleUpdatePassword}>
                 <div className="space-y-4">
                   <h3 className="text-base font-medium flex items-center">
@@ -315,7 +385,7 @@ export default function SettingsPage() {
                     Password
                   </h3>
                   <div className="space-y-2">
-                    <Label htmlFor="current-password">Current Password</Label>
+                    <Label htmlFor="current-password">Old Password</Label>
                     <Input
                       id="current-password"
                       type="password"
@@ -349,6 +419,7 @@ export default function SettingsPage() {
                   </Button>
                 </div>
               </form>
+              </div>
             </CardContent>
           </Card>
         </TabsContent>

@@ -37,7 +37,7 @@ export default function ServicesPage() {
                                     src="/images/card.jpg"
                                     width={550}
                                     height={550}
-                                    alt="HSGB Card"
+                                    alt="Evertrust Card"
                                     className="w-full h-auto"
                                 />
                             </div>
@@ -93,7 +93,7 @@ export default function ServicesPage() {
                                                 src="/images/card.jpg"
                                                 width={400}
                                                 height={300}
-                                                alt="HSGB Checking"
+                                                alt="Evertrust Checking"
                                                 className="w-full h-auto rounded-lg"
                                             />
                                         </div>
@@ -388,7 +388,7 @@ export default function ServicesPage() {
                             </div>
                             <h3 className="text-xl font-semibold mb-2">Start banking better</h3>
                             <p className="text-gray-600">
-                                Use your HSGB debit card, manage your money in the app, and enjoy
+                                Use your Evertrust debit card, manage your money in the app, and enjoy
                                 fee-free banking.
                             </p>
                         </div>

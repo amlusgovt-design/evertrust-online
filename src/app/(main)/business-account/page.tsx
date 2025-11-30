@@ -14,7 +14,7 @@ import {
 import { ArrowRight, Building2, Users } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "Business Banking | HSGB",
+    title: "Business Banking | Evertrust",
     description: "Comprehensive business banking solutions for companies of all sizes",
 };
 
@@ -56,7 +56,7 @@ export default function BusinessBankingPage() {
                             <div className="relative mx-auto aspect-[16/9] overflow-hidden rounded-xl bg-gray-100 shadow-lg md:aspect-[16/9]">
                                 <Image
                                     src="/placeholder.svg?height=720&width=1280"
-                                    alt="HSGB Business Banking"
+                                    alt="Evertrust Business Banking"
                                     fill
                                     className="object-cover"
                                 />
@@ -96,7 +96,7 @@ export default function BusinessBankingPage() {
                         Banking That Works as Hard as You Do
                     </h2>
                     <p className="text-lg mb-6">
-                        At HSGB, we understand that businesses have unique financial needs. Our
+                        At Evertrust, we understand that businesses have unique financial needs. Our
                         comprehensive suite of business banking solutions is designed to support
                         companies at every stage of growth—from startups to established enterprises.
                     </p>
@@ -117,7 +117,7 @@ export default function BusinessBankingPage() {
                 <div className="relative h-[400px] w-full rounded-lg overflow-hidden shadow-xl order-1 md:order-2">
                     <Image
                         src="/images/solution.jpg"
-                        alt="HSGB Business Banking"
+                        alt="Evertrust Business Banking"
                         fill
                         className="object-cover"
                     />
@@ -1379,13 +1379,13 @@ export default function BusinessBankingPage() {
 
             <div className="bg-slate-50 rounded-xl p-8 mb-20">
                 <h2 className="text-3xl font-bold text-center mb-12">
-                    Why Choose HSGB for Your Business?
+                    Why Choose Evertrust for Your Business?
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                     <div className="relative h-[400px] w-full rounded-lg overflow-hidden shadow-xl">
                         <Image
                             src="/images/startup.jpg"
-                            alt="HSGB Business Banking Team"
+                            alt="Evertrust Business Banking Team"
                             fill
                             className="object-cover"
                         />
@@ -1418,7 +1418,7 @@ export default function BusinessBankingPage() {
                                 </AccordionTrigger>
                                 <AccordionContent>
                                     <p className="mb-4">
-                                        HSGB has specialized teams dedicated to key industries
+                                        Evertrust has specialized teams dedicated to key industries
                                         including healthcare, manufacturing, technology, real
                                         estate, professional services, and nonprofit organizations.
                                     </p>
@@ -1455,7 +1455,7 @@ export default function BusinessBankingPage() {
                                 <AccordionContent>
                                     <p className="mb-4">
                                         With over $50 billion in assets and consistently strong
-                                        capital ratios, HSGB provides the financial stability and
+                                        capital ratios, Evertrust provides the financial stability and
                                         resources your business needs for long-term growth and
                                         success.
                                     </p>
@@ -1473,7 +1473,7 @@ export default function BusinessBankingPage() {
                                 </AccordionTrigger>
                                 <AccordionContent>
                                     <p className="mb-4">
-                                        HSGB is deeply committed to the communities we serve. We
+                                        Evertrust is deeply committed to the communities we serve. We
                                         invest in local economic development initiatives, provide
                                         financing for community projects, and encourage employee
                                         volunteerism.
@@ -1508,7 +1508,7 @@ export default function BusinessBankingPage() {
                         </CardHeader>
                         <CardContent>
                             <p className="mb-4">
-                                HSGB&apos;s international banking solutions helped us expand into
+                                Evertrust&apos;s international banking solutions helped us expand into
                                 new markets with minimal friction. Their trade finance expertise and
                                 foreign exchange services saved us both time and money.
                             </p>
@@ -1531,7 +1531,7 @@ export default function BusinessBankingPage() {
                         </CardHeader>
                         <CardContent>
                             <p className="mb-4">
-                                The specialized healthcare banking team at HSGB understood our
+                                The specialized healthcare banking team at Evertrust understood our
                                 unique challenges. Their tailored financing solutions helped us
                                 expand our facilities and invest in cutting-edge medical technology.
                             </p>
@@ -1558,7 +1558,7 @@ export default function BusinessBankingPage() {
                         </CardHeader>
                         <CardContent>
                             <p className="mb-4">
-                                From our seed round to Series B, HSGB has been an invaluable
+                                From our seed round to Series B, Evertrust has been an invaluable
                                 partner. Their scalable treasury management solutions and
                                 growth-focused approach to lending helped us navigate rapid
                                 expansion.
@@ -1575,7 +1575,7 @@ export default function BusinessBankingPage() {
                         Ready to Take Your Business to the Next Level?
                     </h2>
                     <p className="text-lg mb-8">
-                        Partner with HSGB for comprehensive business banking solutions tailored to
+                        Partner with Evertrust for comprehensive business banking solutions tailored to
                         your unique needs.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">

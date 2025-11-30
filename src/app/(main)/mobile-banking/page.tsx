@@ -18,7 +18,7 @@ export default function MobileBankingPage() {
                                     Banking in the palm of your hand
                                 </h1>
                                 <p className="max-w-[600px] text-white/80 md:text-xl">
-                                    Manage your money anytime, anywhere with the HSGB mobile app.
+                                    Manage your money anytime, anywhere with the Evertrust mobile app.
                                 </p>
                             </div>
                             <div className="flex flex-col sm:flex-row gap-4">
@@ -39,7 +39,7 @@ export default function MobileBankingPage() {
                                     src="/images/hero.png"
                                     width={550}
                                     height={550}
-                                    alt="HSGB Mobile App"
+                                    alt="Evertrust Mobile App"
                                     className="w-full h-auto"
                                 />
                             </div>
@@ -307,7 +307,7 @@ export default function MobileBankingPage() {
                         Ready to bank on the go?
                     </h2>
                     <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-                        Join over 15 million members who are managing their money with the HSGB
+                        Join over 15 million members who are managing their money with the Evertrust
                         mobile app.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">

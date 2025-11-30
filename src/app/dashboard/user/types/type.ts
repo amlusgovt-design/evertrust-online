@@ -36,9 +36,11 @@ export interface INotification {
 export interface IUser {
     uid: string;
     fullName: string;
+    username: string;
     email: string;
     password: string;
     role: "user";
+    pin: string | null; 
     accountNumber: string;
     status: string;
     kycStatus: string;
@@ -67,7 +69,8 @@ export interface AppContextType {
         password: string,
         firstName: string,
         lastName: string,
-        country: string
+        country: string,
+        username: string,
     ) => Promise<AppState["user"] | null | undefined>;
     login: (
         accountNumber: string,

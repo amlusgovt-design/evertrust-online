@@ -9,7 +9,7 @@ export function SiteFooter() {
                     <div className="flex flex-col gap-2 md:w-1/4">
                         <div className="flex items-center gap-2">
                             <Building2 className="h-6 w-6 text-emerald-600" />
-                            <span className="text-xl font-bold">HSGB</span>
+                            <span className="text-xl font-bold">Evertrust Online Bank</span>
                         </div>
                         <p className="text-sm text-gray-500">
                             Comprehensive financial solutions for businesses of all sizes.
@@ -225,7 +225,7 @@ export function SiteFooter() {
                 <div className="border-t py-6">
                     <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
                         <p className="text-xs text-gray-500">
-                            © {new Date().getFullYear()} HSGB Financial Services. All rights
+                            © {new Date().getFullYear()} Evertrust Financial Services. All rights
                             reserved.
                         </p>
                         <div className="flex gap-4">

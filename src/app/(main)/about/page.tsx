@@ -13,7 +13,7 @@ export default function AboutPage() {
                         <div className="flex flex-col justify-center space-y-8">
                             <div className="space-y-6">
                                 <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-white">
-                                    Hi, {`We're`} HSGB.
+                                    Hi, {`We're`} Evertrust.
                                 </h1>
                                 <p className="max-w-[600px] text-white/80 md:text-xl">
                                     We are proud to be one of the most trusted banking apps in
@@ -36,7 +36,7 @@ export default function AboutPage() {
                                     src="/images/direct.jpg"
                                     width={550}
                                     height={750}
-                                    alt="HSGB Card"
+                                    alt="Evertrust Card"
                                     className="w-full h-auto"
                                 />
                             </div>
@@ -62,7 +62,7 @@ export default function AboutPage() {
                                 About us
                             </div>
                             <p className="text-gray-600 md:text-lg">
-                                HSGB® is a financial technology company that believes basic banking
+                                Evertrust® is a financial technology company that believes basic banking
                                 services should be helpful, easy, and free. We work with national
                                 banks to offer banking products and services that better meet the
                                 needs of everyday people. All of our members&apos; account balances
@@ -73,7 +73,7 @@ export default function AboutPage() {
                             </p>
                             <p className="text-gray-600 md:text-lg">
                                 We want to profit with our members, not from them. That&apos;s why
-                                HSGB doesn&apos;t rely on overdraft fees, monthly service fees, or
+                                Evertrust doesn&apos;t rely on overdraft fees, monthly service fees, or
                                 minimum balance requirements. Our business was built with important
                                 safeguards at the center, which ensure customer deposits are always
                                 safe and accessible.
@@ -99,7 +99,7 @@ export default function AboutPage() {
                             What We Stand For
                         </h2>
                         <p className="mt-4 text-gray-600 md:text-lg max-w-3xl mx-auto">
-                            Our core values guide everything we do at HSGB, from product development
+                            Our core values guide everything we do at Evertrust, from product development
                             to customer service.
                         </p>
                     </div>
@@ -191,7 +191,7 @@ export default function AboutPage() {
                             Meet Our Leadership
                         </h2>
                         <p className="mt-4 text-gray-600 md:text-lg max-w-3xl mx-auto">
-                            The experienced team guiding HSGB&apos;s vision and growth.
+                            The experienced team guiding Evertrust&apos;s vision and growth.
                         </p>
                     </div>
 

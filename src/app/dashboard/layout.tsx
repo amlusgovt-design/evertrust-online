@@ -116,7 +116,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                 <div className="flex h-16 border-b px-8 items-center gap-2">
                     <Link href="/" className="flex items-center gap-2">
                         <Building2 className="h-6 w-6 text-emerald-600" />
-                        <span className="text-xl text-emerald-600 font-bold">HSGB</span>
+                        <span className="text-sm text-emerald-600 font-bold">Evertrust Online Bank</span>
                     </Link>
                 </div>
                 <nav className="flex-1 space-y-3 px-3 py-4">
@@ -165,7 +165,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                                     href="/"
                                     className="flex items-center gap-2 text-lg font-semibold"
                                 >
-                                    <span className="font-bold text-green-600">HSGB</span>
+                                    <span className="font-bold text-green-600">Evertrust</span>
                                 </Link>
                                 {navItems.map((item) => (
                                     <Link

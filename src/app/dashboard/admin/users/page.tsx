@@ -107,6 +107,7 @@ export default function UsersPage() {
     const [password, setPassword] = useState("");
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
+    const [userName, setUserName] = useState('');
     const [country, setCountry] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
     const [isLoading, setIsLoading] = useState(false);
@@ -140,6 +141,7 @@ export default function UsersPage() {
                 gender: editingUser.gender,
                 phoneNumber: editingUser.phoneNumber,
                 dateOfBirth: editingUser.dateOfBirth,
+                username: editingUser.username,
                 country: editingUser.country,
                 occupation: editingUser.occupation,
                 sortcode: editingUser.sortcode,
@@ -210,7 +212,7 @@ export default function UsersPage() {
         }
 
         try {
-            const user = await register(email, password, firstName, lastName, country);
+            const user = await register(email, password, firstName, lastName, userName, country);
 
             if (user?.accountNumber) {
                 toast.success("User Created Successfully", {
@@ -219,21 +221,6 @@ export default function UsersPage() {
                         fontSize: "14px",
                     },
                 });
-                setTimeout(() => {
-                    toast.promise(
-                        sendAccountNumber(firstName, email, user.accountNumber),
-                        {
-                            loading: "Sending Account Number",
-                            success: `Account Number Sent to ${email}`,
-                            error: "Error sending account number",
-                        },
-                        {
-                            style: {
-                                fontSize: "14px",
-                            },
-                        }
-                    );
-                }, 3000);
             }
 
             // Reset form
@@ -243,6 +230,7 @@ export default function UsersPage() {
             setPassword("");
             setConfirmPassword("");
             setCountry("");
+            setUserName("")
         } catch (error) {
             console.log(error);
             toast.error(`User Registration Failed`);

@@ -18,7 +18,7 @@ export default function HowItWorksPage() {
                                     Banking that has your back
                                 </h1>
                                 <p className="max-w-[600px] text-white/80 md:text-xl">
-                                    HSGB helps you get ahead with fee-free banking services designed
+                                    Evertrust helps you get ahead with fee-free banking services designed
                                     to help you save money and manage your finances.
                                 </p>
                             </div>
@@ -40,7 +40,7 @@ export default function HowItWorksPage() {
                                     src="/images/img1.jpg"
                                     width={550}
                                     height={550}
-                                    alt="HSGB Mobile App"
+                                    alt="Evertrust Mobile App"
                                     className="w-full h-auto"
                                 />
                             </div>
@@ -54,7 +54,7 @@ export default function HowItWorksPage() {
                 <div className="container px-4 md:px-6 max-w-6xl mx-auto">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
-                            How HSGB Works
+                            How Evertrust Works
                         </h2>
                         <p className="mt-4 text-gray-600 md:text-xl max-w-3xl mx-auto">
                             Banking made simple in three easy steps
@@ -90,7 +90,7 @@ export default function HowItWorksPage() {
                             </div>
                             <h3 className="text-xl font-semibold mb-2">Start Banking Better</h3>
                             <p className="text-gray-600">
-                                Use your HSGB Visa® Debit Card, manage your money in the app, and
+                                Use your Evertrust Visa® Debit Card, manage your money in the app, and
                                 enjoy fee-free banking.
                             </p>
                         </div>
@@ -191,7 +191,7 @@ export default function HowItWorksPage() {
                             What Our Members Say
                         </h2>
                         <p className="mt-4 text-gray-600 md:text-xl max-w-3xl mx-auto">
-                            Join over 15 million members who are getting ahead with HSGB
+                            Join over 15 million members who are getting ahead with Evertrust
                         </p>
                     </div>
 
@@ -213,7 +213,7 @@ export default function HowItWorksPage() {
                                 </div>
                             </div>
                             <p className="text-gray-600 mb-4">
-                                &quot;I love that I get paid early with HSGB. The app is super easy
+                                &quot;I love that I get paid early with Evertrust. The app is super easy
                                 to use and I&apos;ve saved so much money by not paying fees.&quot;
                             </p>
                             <p className="font-semibold">- Sarah T.</p>
@@ -259,7 +259,7 @@ export default function HowItWorksPage() {
                                 </div>
                             </div>
                             <p className="text-gray-600 mb-4">
-                                &quot;Switching to HSGB was the best financial decision I&apos;ve
+                                &quot;Switching to Evertrust was the best financial decision I&apos;ve
                                 made. No fees, great app, and amazing customer service.&quot;
                             </p>
                             <p className="font-semibold">- Jessica L.</p>

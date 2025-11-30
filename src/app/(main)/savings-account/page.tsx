@@ -305,7 +305,7 @@ export default function SavingsAccountPage() {
                         Ready to start saving more?
                     </h2>
                     <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-                        Join over 15 million members who are growing their savings with HSGB.
+                        Join over 15 million members who are growing their savings with Evertrust.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
                         <Button

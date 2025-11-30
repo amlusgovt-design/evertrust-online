@@ -130,7 +130,7 @@ export default function ATM() {
                                 <ul className="space-y-2">
                                     <li className="flex items-start">
                                         <Check className="mr-2 h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
-                                        <span>Find ATMs in the HSGB mobile app</span>
+                                        <span>Find ATMs in the Evertrust mobile app</span>
                                     </li>
                                     <li className="flex items-start">
                                         <Check className="mr-2 h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
@@ -171,7 +171,7 @@ export default function ATM() {
                             </Button>
                         </div>
                         <p className="text-sm text-gray-500 mt-2 text-center">
-                            Or use the HSGB mobile app to find ATMs near your current location
+                            Or use the Evertrust mobile app to find ATMs near your current location
                         </p>
                     </div>
 
@@ -266,7 +266,7 @@ export default function ATM() {
                                 Find ATMs on the go
                             </h2>
                             <p className="text-gray-600 md:text-lg">
-                                The HSGB mobile app makes it easy to find fee-free ATMs wherever you
+                                The Evertrust mobile app makes it easy to find fee-free ATMs wherever you
                                 are. Use your current location to find nearby ATMs, get directions,
                                 and even see which ATMs allow cash deposits.
                             </p>

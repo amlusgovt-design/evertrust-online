@@ -23,7 +23,7 @@ import {
 } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
-    title: "Business Loans & Financing | HSGB Financial Services",
+    title: "Business Loans & Financing | Evertrust Financial Services",
     description:
         "Flexible business financing solutions including lines of credit, term loans, equipment financing, and SBA loans to help your business grow.",
 };
@@ -34,7 +34,7 @@ export default function LoansPage() {
             {/* Hero Section */}
             <section className="relative overflow-hidden bg-gradient-to-b from-emerald-50 to-white py-20 md:py-32">
                 <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.5))] dark:bg-grid-slate-700/25"></div>
-                <div className="container relative px-4 md:px-6">
+                <div className="container mx-auto relative px-4 md:px-6">
                     <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
                         <div className="space-y-6">
                             <div className="inline-flex items-center rounded-full border border-emerald-600/20 bg-emerald-50 px-3 py-1 text-sm text-emerald-700">
@@ -106,7 +106,7 @@ export default function LoansPage() {
 
             {/* Loan Types Section */}
             <section className="py-20 md:py-32" id="lines-of-credit">
-                <div className="container px-4 md:px-6">
+                <div className="container mx-auto px-4 md:px-6">
                     <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
                         <div className="space-y-2">
                             <div className="inline-block rounded-lg bg-emerald-100 px-3 py-1 text-sm text-emerald-700">
@@ -396,7 +396,7 @@ export default function LoansPage() {
 
             {/* Loan Process Section */}
             <section className="bg-emerald-50 py-20 md:py-32">
-                <div className="container px-4 md:px-6">
+                <div className="container mx-auto px-4 md:px-6">
                     <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
                         <div className="space-y-2">
                             <div className="inline-block rounded-lg bg-emerald-100 px-3 py-1 text-sm text-emerald-700">
@@ -481,7 +481,7 @@ export default function LoansPage() {
 
             {/* Loan Calculator Section */}
             <section className="py-20 md:py-32" id="loan-calculator">
-                <div className="container px-4 md:px-6">
+                <div className="container mx-auto px-4 md:px-6">
                     <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
                         <div className="space-y-6">
                             <div className="inline-flex items-center rounded-full border border-emerald-600/20 bg-emerald-50 px-3 py-1 text-sm text-emerald-700">
@@ -609,7 +609,7 @@ export default function LoansPage() {
 
             {/* FAQ Section */}
             <section className="bg-gray-50 py-20 md:py-32">
-                <div className="container px-4 md:px-6">
+                <div className="container mx-auto px-4 md:px-6">
                     <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
                         <div className="space-y-2">
                             <div className="inline-block rounded-lg bg-emerald-100 px-3 py-1 text-sm text-emerald-700">
@@ -854,7 +854,7 @@ export default function LoansPage() {
 
             {/* CTA Section */}
             <section className="bg-emerald-600 py-20 md:py-32 text-white">
-                <div className="container px-4 md:px-6">
+                <div className="container mx-auto px-4 md:px-6">
                     <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
                         <div className="space-y-6">
                             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">

@@ -9,7 +9,7 @@ export function SiteHeader() {
                 <div className="flex items-center gap-2">
                     <Link href="/" className="flex items-center gap-2">
                         <Building2 className="h-6 w-6 text-emerald-600" />
-                        <span className="text-xl font-bold">HSGB</span>
+                        <span className="text-xl font-bold">Evertrust Online Bank</span>
                     </Link>
                 </div>
                 <nav className="hidden md:flex gap-6">

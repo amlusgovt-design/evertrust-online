@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-    title: "HSGB",
+    title: "Evertrust Online Bank",
     description: "Secure, Simple, Smart and Reliable",
 };
 

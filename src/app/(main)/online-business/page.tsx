@@ -8,7 +8,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ArrowRight, BarChart3, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "Online Banking | HSGB",
+    title: "Online Banking | Evertrust",
     description: "Powerful online banking solutions for businesses of all sizes",
 };
 
@@ -18,7 +18,7 @@ export default function OnlineBankingPage() {
             {/* Replace the existing hero section with this more engaging one */}
             <section className="relative overflow-hidden bg-gradient-to-b from-emerald-50 to-white py-20 md:py-32">
                 <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.5))] dark:bg-grid-slate-700/25"></div>
-                <div className="container relative px-4 md:px-6">
+                <div className="container mx-auto relative px-4 md:px-6">
                     <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
                         <div className="space-y-6">
                             <div className="inline-flex items-center rounded-full border border-emerald-600/20 bg-emerald-50 px-3 py-1 text-sm text-emerald-700">
@@ -52,12 +52,12 @@ export default function OnlineBankingPage() {
                             <div className="relative mx-auto aspect-[16/9] overflow-hidden rounded-xl bg-gray-100 shadow-lg md:aspect-[16/9]">
                                 <Image
                                     src="/images/dashboard.jpg"
-                                    alt="HSGB Online Banking Dashboard"
+                                    alt="Evertrust Online Banking Dashboard"
                                     fill
                                     className="object-cover"
                                 />
                             </div>
-                            <div className="absolute -bottom-6 -left-6 h-24 w-64 rounded-lg bg-white p-4 shadow-lg">
+                            <div className="absolute -bottom-0 -left-40 h-24 w-64 rounded-lg bg-white p-4 shadow-lg">
                                 <div className="flex items-center gap-4">
                                     <div className="rounded-full bg-emerald-100 p-2">
                                         <ShieldCheck className="h-6 w-6 text-emerald-600" />
@@ -68,7 +68,7 @@ export default function OnlineBankingPage() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="absolute -right-6 -top-6 h-24 w-64 rounded-lg bg-white p-4 shadow-lg">
+                            <div className="absolute right-10 -top-2 h-24 w-64 rounded-lg bg-white p-4 shadow-lg">
                                 <div className="flex items-center gap-4">
                                     <div className="rounded-full bg-emerald-100 p-2">
                                         <BarChart3 className="h-6 w-6 text-emerald-600" />
@@ -90,7 +90,7 @@ export default function OnlineBankingPage() {
                         Manage Your Business Finances Anytime, Anywhere
                     </h2>
                     <p className="text-lg mb-6">
-                        HSGB&apos;s online banking platform provides businesses with secure, 24/7
+                        Evertrust&apos;s online banking platform provides businesses with secure, 24/7
                         access to accounts, transactions, and financial tools designed to streamline
                         your operations and help your business thrive.
                     </p>
@@ -167,7 +167,7 @@ export default function OnlineBankingPage() {
                 <div className="relative h-[400px] w-full rounded-lg overflow-hidden shadow-xl">
                     <Image
                         src="/images/dashboard.jpg"
-                        alt="HSGB Online Banking Dashboard"
+                        alt="Evertrust Online Banking Dashboard"
                         fill
                         className="object-cover"
                     />
@@ -537,7 +537,7 @@ export default function OnlineBankingPage() {
                         Ready to Transform Your Business Banking?
                     </h2>
                     <p className="text-lg mb-8">
-                        Join thousands of businesses that trust HSGB for their online banking needs.
+                        Join thousands of businesses that trust Evertrust for their online banking needs.
                         Our platform is designed to grow with your business, from startup to
                         enterprise.
                     </p>
@@ -576,7 +576,7 @@ export default function OnlineBankingPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div>
                         <h3 className="text-xl font-semibold mb-2">
-                            How secure is HSGB&apos;s online banking platform?
+                            How secure is Evertrust&apos;s online banking platform?
                         </h3>
                         <p className="text-muted-foreground">
                             Our platform employs bank-grade security including 256-bit encryption,
@@ -600,7 +600,7 @@ export default function OnlineBankingPage() {
                             What accounting software integrations are available?
                         </h3>
                         <p className="text-muted-foreground">
-                            HSGB integrates with all major accounting platforms including
+                            Evertrust integrates with all major accounting platforms including
                             QuickBooks, Xero, FreshBooks, Sage, and many others. Our API also allows
                             for custom integrations with proprietary systems.
                         </p>
@@ -639,9 +639,9 @@ export default function OnlineBankingPage() {
             </div>
 
             <div className="text-center">
-                <h2 className="text-3xl font-bold mb-6">Experience HSGB Online Banking Today</h2>
+                <h2 className="text-3xl font-bold mb-6">Experience Evertrust Online Banking Today</h2>
                 <p className="max-w-2xl mx-auto mb-8 text-lg">
-                    Join the thousands of businesses that trust HSGB for their financial needs. Our
+                    Join the thousands of businesses that trust Evertrust for their financial needs. Our
                     online banking platform is designed to help your business thrive.
                 </p>
                 <Button asChild size="lg" className="bg-emerald-600 hover:bg-emerald-700">

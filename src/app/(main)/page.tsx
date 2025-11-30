@@ -23,7 +23,7 @@ export default function HomePage() {
             {/* Hero Section */}
             <section className="relative overflow-hidden bg-gradient-to-b from-emerald-50 to-white py-20 md:py-32">
                 <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.5))] dark:bg-grid-slate-700/25"></div>
-                <div className="container relative px-4 md:px-6">
+                <div className="container mx-auto relative px-4 md:px-2">
                     <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
                         <div className="space-y-6">
                             <div className="inline-flex items-center rounded-full border border-emerald-600/20 bg-emerald-50 px-3 py-1 text-sm text-emerald-700">
@@ -31,12 +31,12 @@ export default function HomePage() {
                                     Financial Solutions for Business Growth
                                 </span>
                             </div>
-                            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
+                            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
                                 Powering Business{" "}
                                 <span className="text-emerald-600">Financial Success</span>
                             </h1>
                             <p className="text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed max-w-[600px]">
-                                HSGB delivers comprehensive financial services designed specifically
+                            Evertrust delivers comprehensive financial services designed specifically
                                 for businesses. From advanced banking solutions to flexible
                                 financing options, we help your business thrive in today&apos;s
                                 competitive landscape.
@@ -82,12 +82,12 @@ export default function HomePage() {
                             <div className="relative border mx-auto aspect-[16/9] overflow-hidden rounded-xl bg-gray-100 shadow-lg md:aspect-[16/9]">
                                 <Image
                                     src="/images/hero.jpg"
-                                    alt="HSGB Business Banking Dashboard"
+                                    alt="Evertrust Business Banking Dashboard"
                                     fill
                                     className="object-cover"
                                 />
                             </div>
-                            <div className="absolute -bottom-6 -left-6 h-24 w-64 rounded-lg bg-white p-4 shadow-lg">
+                            <div className="absolute -bottom-6 -left-45 h-24 w-64 rounded-lg bg-white p-4 shadow-lg">
                                 <div className="flex items-center gap-4">
                                     <div className="rounded-full bg-emerald-100 p-2">
                                         <TrendingUp className="h-6 w-6 text-emerald-600" />
@@ -100,7 +100,7 @@ export default function HomePage() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="absolute -right-6 -top-6 h-24 w-64 rounded-lg bg-white p-4 shadow-lg">
+                            <div className="absolute right-20 top-2 h-24 w-64 rounded-lg bg-white p-4 shadow-lg">
                                 <div className="flex items-center gap-4">
                                     <div className="rounded-full bg-emerald-100 p-2">
                                         <LineChart className="h-6 w-6 text-emerald-600" />
@@ -118,7 +118,7 @@ export default function HomePage() {
 
             {/* Business Solutions Section */}
             <section className="py-20 md:py-32">
-                <div className="container px-4 md:px-6">
+                <div className="container mx-auto px-4 md:px-6">
                     <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
                         <div className="space-y-2">
                             <div className="inline-block rounded-lg bg-emerald-100 px-3 py-1 text-sm text-emerald-700">
@@ -128,7 +128,7 @@ export default function HomePage() {
                                 Financial Services for Business Success
                             </h2>
                             <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                                HSGB offers a comprehensive suite of financial services tailored to
+                                Evertrust offers a comprehensive suite of financial services tailored to
                                 meet the unique needs of businesses of all sizes, from startups to
                                 established enterprises.
                             </p>
@@ -351,17 +351,17 @@ export default function HomePage() {
 
             {/* Why Choose Us Section */}
             <section className="bg-emerald-50 py-20 md:py-32">
-                <div className="container px-4 md:px-6">
+                <div className="container mx-auto px-4 md:px-6">
                     <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
                         <div className="space-y-6">
                             <div className="inline-flex items-center rounded-full border border-emerald-600/20 bg-emerald-100 px-3 py-1 text-sm text-emerald-700">
-                                <span className="font-medium">Why HSGB</span>
+                                <span className="font-medium">Why Evertrust</span>
                             </div>
                             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                                 Banking That Works as Hard as You Do
                             </h2>
                             <p className="text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                                At HSGB, we understand the unique challenges businesses face. Our
+                                At Evertrust, we understand the unique challenges businesses face. Our
                                 comprehensive financial solutions are designed to support your
                                 growth, streamline operations, and help you achieve your goals.
                             </p>
@@ -415,7 +415,7 @@ export default function HomePage() {
                             </div>
 
                             <Button asChild className="bg-emerald-600 hover:bg-emerald-700">
-                                <Link href="/about">Learn More About HSGB</Link>
+                                <Link href="/about">Learn More About Evertrust</Link>
                             </Button>
                         </div>
 
@@ -423,7 +423,7 @@ export default function HomePage() {
                             <div className="relative mx-auto aspect-[4/3] overflow-hidden rounded-xl bg-gray-100 shadow-lg">
                                 <Image
                                     src="/images/img2.jpg"
-                                    alt="HSGB Business Team"
+                                    alt="Evertrust Business Team"
                                     fill
                                     className="object-cover"
                                 />
@@ -457,7 +457,7 @@ export default function HomePage() {
 
             {/* Business Solutions Tabs */}
             <section className="py-20 md:py-32">
-                <div className="container px-4 md:px-6">
+                <div className="container mx-auto px-4 md:px-6">
                     <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
                         <div className="space-y-2">
                             <div className="inline-block rounded-lg bg-emerald-100 px-3 py-1 text-sm text-emerald-700">
@@ -467,7 +467,7 @@ export default function HomePage() {
                                 Solutions for Every Business Stage
                             </h2>
                             <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                                Whether you&apos;re just starting out or looking to expand, HSGB has
+                                Whether you&apos;re just starting out or looking to expand, Evertrust has
                                 the financial tools and expertise to support your business journey.
                             </p>
                         </div>
@@ -770,7 +770,7 @@ export default function HomePage() {
 
             {/* Testimonials Section */}
             <section className="bg-gray-50 py-20 md:py-32">
-                <div className="container px-4 md:px-6">
+                <div className="container mx-auto px-4 md:px-6">
                     <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
                         <div className="space-y-2">
                             <div className="inline-block rounded-lg bg-emerald-100 px-3 py-1 text-sm text-emerald-700">
@@ -780,7 +780,7 @@ export default function HomePage() {
                                 Trusted by Businesses Like Yours
                             </h2>
                             <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                                Hear from our clients about how HSGB&apos;s financial solutions have
+                                Hear from our clients about how Evertrust&apos;s financial solutions have
                                 helped them achieve their business goals.
                             </p>
                         </div>
@@ -792,19 +792,19 @@ export default function HomePage() {
                                 name: "Sarah Johnson",
                                 title: "CEO, TechInnovate",
                                 image: "/images/testimonial3.jpg",
-                                quote: "HSGB's business banking solutions have been instrumental in our growth. Their dedicated relationship manager understands our industry and has helped us navigate complex financial challenges.",
+                                quote: "Evertrust's business banking solutions have been instrumental in our growth. Their dedicated relationship manager understands our industry and has helped us navigate complex financial challenges.",
                             },
                             {
                                 name: "Michael Chen",
                                 title: "CFO, Global Manufacturing",
                                 image: "/images/testimonial4.jpg",
-                                quote: "The international banking services at HSGB have simplified our global operations. Their competitive exchange rates and trade finance solutions have saved us both time and money.",
+                                quote: "The international banking services at Evertrust have simplified our global operations. Their competitive exchange rates and trade finance solutions have saved us both time and money.",
                             },
                             {
                                 name: "Jennifer Park",
                                 title: "Founder, Healthcare Solutions",
                                 image: "/images/testimonial2.jpg",
-                                quote: "As a healthcare startup, we needed specialized financing. HSGB's industry expertise and tailored loan options helped us expand our facilities and invest in cutting-edge medical technology.",
+                                quote: "As a healthcare startup, we needed specialized financing. Evertrust's industry expertise and tailored loan options helped us expand our facilities and invest in cutting-edge medical technology.",
                             },
                         ].map((testimonial, i) => (
                             <div key={i} className="rounded-xl bg-white p-6 shadow-md">
@@ -844,14 +844,14 @@ export default function HomePage() {
 
             {/* CTA Section */}
             <section className="bg-emerald-600 py-20 md:py-32 text-white">
-                <div className="container px-4 md:px-6">
+                <div className="container mx-auto px-4 md:px-6">
                     <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
                         <div className="space-y-6">
                             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                                 Ready to Transform Your Business Banking Experience?
                             </h2>
                             <p className="md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                                Join thousands of businesses that trust HSGB for their financial
+                                Join thousands of businesses that trust Evertrust for their financial
                                 needs. Our comprehensive solutions are designed to help your
                                 business thrive in today&apos;s competitive landscape.
                             </p>
@@ -901,7 +901,7 @@ export default function HomePage() {
 
             {/* Latest Insights Section */}
             <section className="py-20 md:py-32">
-                <div className="container px-4 md:px-6">
+                <div className="container mx-auto px-4 md:px-6">
                     <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
                         <div className="space-y-2">
                             <div className="inline-block rounded-lg bg-emerald-100 px-3 py-1 text-sm text-emerald-700">

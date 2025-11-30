@@ -15,7 +15,7 @@ export default function DebitCardPage() {
                         <div className="flex flex-col justify-center space-y-8">
                             <div className="space-y-6">
                                 <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-white">
-                                    The HSGB Visa® Debit Card
+                                    The Evertrust Visa® Debit Card
                                 </h1>
                                 <p className="max-w-[600px] text-white/80 md:text-xl">
                                     A secure, fee-free debit card that puts you in control of your
@@ -40,7 +40,7 @@ export default function DebitCardPage() {
                                     src="/images/card.jpg"
                                     width={550}
                                     height={550}
-                                    alt="HSGB Visa Debit Card"
+                                    alt="Evertrust Visa Debit Card"
                                     className="w-full h-auto"
                                 />
                             </div>
@@ -178,7 +178,7 @@ export default function DebitCardPage() {
                                 Control your card from anywhere
                             </h2>
                             <p className="text-gray-600 md:text-lg">
-                                The HSGB app gives you complete control over your debit card. Lock
+                                The Evertrust app gives you complete control over your debit card. Lock
                                 or unlock your card with a tap, set spending limits, receive instant
                                 transaction alerts, and manage your PIN - all from your smartphone.
                             </p>
@@ -242,7 +242,7 @@ export default function DebitCardPage() {
                                 Get paid up to 2 days early
                             </h2>
                             <p className="text-gray-600 md:text-lg">
-                                When you set up direct deposit with your HSGB account, you can get
+                                When you set up direct deposit with your Evertrust account, you can get
                                 your paycheck up to two days early. No strings attached, no credit
                                 check, no waiting.
                             </p>
@@ -304,7 +304,7 @@ export default function DebitCardPage() {
                         Ready for a better banking experience?
                     </h2>
                     <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-                        Join over 15 million members who are getting ahead with the HSGB Visa® Debit
+                        Join over 15 million members who are getting ahead with the Evertrust Visa® Debit
                         Card.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
