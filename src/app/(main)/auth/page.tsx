@@ -36,6 +36,7 @@ import {
   DialogFooter,
 } from "@/components/ui/dialog";
 import toast from "react-hot-toast";
+import { usePin } from "@/context/AppSecurityContext";
 
 const countries = [
   "United States",
@@ -77,6 +78,7 @@ export default function AuthPage() {
   const [createdAccountNumber, setCreatedAccountNumber] = useState("");
 
   const { login, register } = useApp();
+  const {setUserAccount} = usePin()
   const router = useRouter();
 
   // ──────────────────────────────────────────────────────────────
@@ -88,9 +90,11 @@ export default function AuthPage() {
     setIsLoading(true);
 
     try {
-      const user = await login(loginUsername.trim(), loginPassword);
+      const user = await login(loginUsername.trim(), loginPassword.trim());
 
       if (!user) throw new Error("Invalid Account ID or password");
+
+      setUserAccount(loginUsername)
 
       // Store minimal session info (you can expand this)
       // Explicitly type user.role as "admin" | "user"
