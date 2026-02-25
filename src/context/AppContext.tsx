@@ -437,6 +437,7 @@ const AppProvider = ({ children }: { children: ReactNode }) => {
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
+      dispatch({ type: "SET_LOADING", payload: true });
       if (user) {
         const userData = await getUserData(user.uid);
 
@@ -456,6 +457,7 @@ const AppProvider = ({ children }: { children: ReactNode }) => {
         dispatch({ type: "RESET_STATE" });
         router.push("/auth");
       }
+      dispatch({ type: "SET_LOADING", payload: false });
     });
 
     return () => unsubscribe();

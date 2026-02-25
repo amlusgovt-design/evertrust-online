@@ -29,6 +29,8 @@ import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/s
 import { getSession, logout } from "@/lib/localStorage";
 import { Session } from "@/lib/localStorage";
 import { useApp } from "@/context/AppContext";
+import { DashboardGate } from "@/components/dashboard-gate";
+import { usePin } from "@/context/AppSecurityContext";
 
 // Function to extract initials from a full name
 const getInitials = (fullName: string) => {
@@ -99,6 +101,10 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
     const isActive = (path: string) => pathname === path;
 
     const { state } = useApp();
+    const {pinVerified, verifyPin, requiresPin} = usePin()
+    
+
+    console.log(requiresPin,)
 
     const handleLogout = () => {
         logout();
@@ -110,6 +116,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
     }
 
     return (
+        <DashboardGate>
         <div className="flex min-h-screen bg-gray-50">
             {/* Sidebar (desktop only) */}
             <aside className="hidden w-64 flex-col border-r bg-white md:flex md:fixed md:inset-y-0 md:z-40">
@@ -241,5 +248,6 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                 <main className="flex-1 overflow-auto p-6">{children}</main>
             </div>
         </div>
+        </DashboardGate>
     );
 }

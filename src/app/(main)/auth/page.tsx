@@ -47,6 +47,7 @@ const countries = [
   "Australia",
   "Japan",
   "India",
+  "Ukranie"
   // …add the rest you need
 ];
 
@@ -326,10 +327,10 @@ export default function AuthPage() {
                   </div>
                 </CardContent>
 
-                <CardFooter>
+                <CardFooter className="mt-5">
                   <Button
                     type="submit"
-                    className="w-full bg-emerald-600 hover:bg-emerald-700"
+                    className="w-full h-12 flex items-center justify-center bg-emerald-600 hover:bg-emerald-700"
                     disabled={isLoading}
                   >
                     {isLoading ? "Logging in..." : "Sign in"}
@@ -347,7 +348,7 @@ export default function AuthPage() {
                 <CardDescription>Fill in the details below</CardDescription>
               </CardHeader>
               <form onSubmit={handleSignup}>
-                <CardContent className="grid gap-y-5 space-y-5">
+                <CardContent className="grid gap-y-4">
                   <div className="grid grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label>First Name</Label>
@@ -387,7 +388,7 @@ export default function AuthPage() {
                   <div className="space-y-2">
                     <Label>Country</Label>
                     <Select value={country} onValueChange={setCountry}>
-                      <SelectTrigger>
+                      <SelectTrigger className="w-full">
                         <SelectValue placeholder="Select your country" />
                       </SelectTrigger>
                       <SelectContent>
@@ -436,10 +437,10 @@ export default function AuthPage() {
                   </div>
                 </CardContent>
 
-                <CardFooter>
+                <CardFooter className="mt-5">
                   <Button
                     type="submit"
-                    className="w-full bg-emerald-600 hover:bg-emerald-700"
+                    className="w-full h-12 flex items-center justify-center bg-emerald-600 hover:bg-emerald-700"
                     disabled={isLoading}
                   >
                     {isLoading ? "Creating account..." : "Create account"}

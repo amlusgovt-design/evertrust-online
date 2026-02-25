@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useState, useEffect } from "react";
+import { createContext, useContext, useState} from "react";
 
 const PIN_REQUIRED_ACCOUNTS = [
   "1223459922",
@@ -30,25 +30,12 @@ export function PinProvider({ children }: { children: React.ReactNode }) {
     }
   };
 
-
-  useEffect(() => {
-    const stored = sessionStorage.getItem("pinVerified");
-    if (stored === "true") {
-      setPinVerified(true);
-    }
-  }, []);
-
   const verifyPin = (pin: string) => {
     if (pin === DEMO_PIN) {
-      sessionStorage.setItem("pinVerified", "true");
       setPinVerified(true);
     }
   };
 
-//   const resetPin = () => {
-//     sessionStorage.removeItem("pinVerified");
-//     setPinVerified(false);
-//   };
 
   return (
     <PinContext.Provider

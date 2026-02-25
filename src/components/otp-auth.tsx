@@ -13,6 +13,7 @@ import {
   InputOTPSlot,
 } from "@/components/ui/input-otp";
 import { usePin } from "@/context/AppSecurityContext";
+import { DialogDescription } from "@radix-ui/react-dialog";
 
 import { useState, useEffect } from "react";
 
@@ -34,10 +35,13 @@ useEffect(() => {
     <Dialog open>
       <DialogContent className="max-w-sm">
         <DialogHeader>
-          <DialogTitle className="mt-6 mb-4 text-center">
-            <h2>Security Verification Required</h2>
-            <p className="mt-3 text-xs font-normal text-gray-400 tracking-wide">Enter your 6 digit pin</p>
+          <DialogTitle className="mt-6 text-center">
+            Security Verification Required
           </DialogTitle>
+          <DialogDescription className="mb-3 text-sm flex items-center justify-center font-normal text-gray-400 tracking-wide">
+          Enter your 6 digit pin
+
+          </DialogDescription>
         </DialogHeader>
 
         <div className="flex items-center justify-center">
