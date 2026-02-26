@@ -72,7 +72,6 @@ export default function TransactionsPage() {
         const allTransactions = adminState.transactions.filter(
             (transaction) => transaction.createdAt !== undefined
         );
-        console.log(allTransactions);
         setTransactions(allTransactions as unknown as ITransaction[]);
     }, [adminState.transactions]);
 

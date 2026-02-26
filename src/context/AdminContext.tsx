@@ -96,7 +96,6 @@ const AdminProvider = ({ children }: { children: ReactNode }) => {
     };
 
     const getAllBankData = async () => {
-        console.log("getAllBankData was Called");
         try {
             dispatch({ type: "SET_LOADING", payload: true });
 

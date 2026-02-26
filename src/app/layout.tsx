@@ -27,9 +27,7 @@ export default function RootLayout({
         <Toaster />
         <PinProvider>
           <AppProvider>
-            <DashboardGate>
             <AdminProvider>{children}</AdminProvider>
-            </DashboardGate>
           </AppProvider>
         </PinProvider>
       </body>

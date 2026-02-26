@@ -18,6 +18,7 @@ import {
 // import { getSession } from "@/lib/localStorage";
 import { useApp } from "@/context/AppContext";
 import { ITransaction } from "./types/type";
+import { DashboardGate } from "@/components/dashboard-gate";
 
 export default function UserDashboard() {
     const [transactions, setTransactions] = useState<ITransaction[]>([]);
@@ -41,6 +42,8 @@ export default function UserDashboard() {
         .slice(0, 5);
 
     return (
+            <DashboardGate>
+
         <div className="flex flex-1">
             {/* Main content */}
             <main className="flex-1 overflow-auto p-4 md:p-6">
@@ -385,5 +388,6 @@ export default function UserDashboard() {
                 </div>
             </main>
         </div>
+        </DashboardGate>
     );
 }

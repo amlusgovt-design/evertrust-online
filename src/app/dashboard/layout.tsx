@@ -104,7 +104,6 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
     const {pinVerified, verifyPin, requiresPin} = usePin()
     
 
-    console.log(requiresPin,)
 
     const handleLogout = () => {
         logout();
@@ -116,7 +115,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
     }
 
     return (
-        <DashboardGate>
+        
         <div className="flex min-h-screen bg-gray-50">
             {/* Sidebar (desktop only) */}
             <aside className="hidden w-64 flex-col border-r bg-white md:flex md:fixed md:inset-y-0 md:z-40">
@@ -248,6 +247,6 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                 <main className="flex-1 overflow-auto p-6">{children}</main>
             </div>
         </div>
-        </DashboardGate>
+
     );
 }
